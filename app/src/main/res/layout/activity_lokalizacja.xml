@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/app_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewLokalizacjaNazwa"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        style="@style/textViewLook"
+        android:text="Lokalizacja użytkownika"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSzerokoscNazwa"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        style="@style/textViewPola"
+        android:text="Szerokość geograficzna"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLokalizacjaNazwa" />
+
+    <TextView
+        android:id="@+id/textViewSzerokosc"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        style="@style/textViewPola"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewSzerokoscNazwa"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLokalizacjaNazwa" />
+
+    <TextView
+        android:id="@+id/textViewDlugoscNazwa"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        style="@style/textViewPola"
+        android:text="Dlugość geograficzna"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSzerokoscNazwa" />
+
+
+    <TextView
+        android:id="@+id/textViewDlugosc"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        style="@style/textViewPola"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewDlugoscNazwa"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSzerokosc" />
+
+
+    <Button
+        android:id="@+id/buttonGenerujKoordynaty"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:onClick="checkLoc"
+        android:text="Generuj lokalizację"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdres" />
+
+    <TextView
+        android:id="@+id/textViewKrajNazwa"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        style="@style/textViewPola"
+        android:text="Kraj"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDlugoscNazwa" />
+
+    <TextView
+        android:id="@+id/textViewAdresNazwa"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        style="@style/textViewPola"
+        android:text="Adres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKrajNazwa" />
+
+    <TextView
+        android:id="@+id/textViewKraj"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        style="@style/textViewPola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewKrajNazwa"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDlugosc" />
+
+    <TextView
+        android:id="@+id/textViewAdres"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        style="@style/textViewPola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewAdresNazwa"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKraj" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGenerujKoordynaty"
+        app:srcCompat="@drawable/gps1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".MainActivity"
+    >
+
+    <Button
+        android:id="@+id/buttonVideoPlayer"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:onClick="przejdzDoOdtwarzaczaWideo"
+        android:text="Odtwarzacz Wideo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonKonwersja" />
+
+    <Button
+        android:id="@+id/main_button"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:onClick="exitWelcomeScreen"
+        android:text="Przejdź do aplikacji"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPowitanie" />
+
+    <TextView
+        android:id="@+id/textViewPowitanie"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        style="@style/textViewLook"
+        android:text="@string/textViewPowitanieVar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLokalizacja"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:onClick="przejdzDoLokalizacji"
+        android:text="Lokalizacja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_button" />
+
+    <Button
+        android:id="@+id/buttonKonwersja"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:onClick="przejdzDoKursowWalut"
+        android:text="Kursy walut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLokalizacja" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

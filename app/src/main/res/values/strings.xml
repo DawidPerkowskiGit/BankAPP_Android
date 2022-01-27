@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BankAPP_Android</string>
+    <string name="textViewPowitanieVar">Witaj w aplikacji wspomagającej pracę banku</string>
+    <string name="buttonPrzejdzDalejVar">PRZEJDŹ DALEJ</string>
+    <string name="textViewWybierzAkcjeVar">Wybierz akcję</string>
+    <string name="buttonListaKlientowVar">Lista klientów</string>
+    <string name="buttonBackToMenu">Powrót do menu</string>
+</resources>
