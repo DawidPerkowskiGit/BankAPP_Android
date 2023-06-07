@@ -9,9 +9,9 @@
 
 ## About application
 The aim of this project was to use backend from my other project and build Android application. Link to the base project:
-```
+
 https://github.com/DawidPerkowskiGit/DP_PO_ProjektBank
-```
+
 
 ## Technologies
 Java 11, Gradle, REST API, Android Studio
